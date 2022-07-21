@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css">
+   <title>Главная</title>
+</head>
+
+<body>
+   <header class="header">
+   <div class="header__body _container">
+      <div class="header__logo">
+         <a href="">
+            <img class='header__img' src="img/header/logo.svg" alt="">
+            <img class='header__img-767' src="img/header/logo_767.svg" alt="">
+            <h1 class="header__logo-link">WARPLAY.CLOUD</h1>
+         </a>
+      </div>
+      <div class="header__menu menu-header">
+         <a class="menu-header__link menu-header__link_active" href="" target="" rel="noopener noreferrer">Главная</a>
+         <a class="menu-header__link" href="" target="" rel="noopener noreferrer">Сервера</a>
+         <a class="menu-header__link" href="" target="" rel="noopener noreferrer">Скачать</a>
+         <a class="menu-header__link" href="" target="" rel="noopener noreferrer">Открыть в браузере</a>
+         <a class="menu-header__link" href="" target="" rel="noopener noreferrer">Цены</a>
+         <a class="menu-header__link" href="" target="" rel="noopener noreferrer">Тех поддержка</a>
+         <button onclick="open_contactUs()" class="menu-header__link" href="" target="" rel="noopener noreferrer">Контакты</button>
+      </div>
+   </div>
+</header>
+   <div class="main__screen">
+      <main class="main">
+         <div class="main__body _container" id="main__body"
+            style='background: url("img/main/slider/01.png") center center no-repeat'>
+            <div class="main__content">
+               <div class="main__title">Сервис облачного гейминга</div>
+               <div class="main__subtitle">Преврати свое устройство в игровое</div>
+               <div class="main__buttons">
+                  <button href="" class="main__button">UPGRADE</button>
+               </div>
+
+               <button onclick="open_burger()" class='menu__icon icon-menu' id="burger-btn">
+                  <span></span>
+                  <span></span>
+               </button>
+            </div>
+         </div>
+      </main>
+      <div class='header__menu-burger menu' id="burger_screen" style="transform: translateX(-100%);" >
+   <div class="menu__container">
+      <a class='menu-logo' href="">
+         <img class='header__img-767' src="img/header/logo_767.svg" alt="">
+         <h1 class="header__logo-link">WARPLAY.CLOUD</h1>
+      </a>
+      <nav class='menu__body'>
+         <ul class='menu__list'>
+            <div class='menu__item'><a href='' class='menu__link'>Главная</a></div>
+            <div class='menu__item'><a href='' class='menu__link'>Сервера</a></div>
+            <div class='menu__item'><a href='' class='menu__link'>Скачать</a></div>
+            <div class='menu__item'><a href='' class='menu__link'>Открыть в браузере</a></div>
+            <div class='menu__item'><a href='' class='menu__link'>Цены</a></div>
+            <div class='menu__item'><a href='' class='menu__link'>Тех поддержка</a></div>
+            <div class='menu__item'><button class='menu__link' onclick="open_contactUs()">Контакты</button></div>
+         </ul>
+      </nav>
+      <div class="menu__navigation">
+         <div class="menu__contact-us">
+            <img src="img/menu-burger/vk.svg" alt="">
+            <img src="img/menu-burger/discord.svg" alt="">
+            <img src="img/menu-burger/YouTube.svg" alt="">
+         </div>
+         <div class="menu__hr"></div>
+         <div class="menu__buttons">
+            <button class="menu__button" onclick="close_burger()">
+               <img src="img/menu-burger/arrow.svg" alt="">
+            </button>
+         </div>
+      </div>
+   </div>
+</div>
+      <div class="contact-us" id="contact_us" style="transform: translateX(-100%);">
+   <div class="contact-us__body _container">
+      <div class="contact-us__container">
+         <button class="contact-us__button" onclick="open_contactUs()">
+            <img src="img/menu-burger/arrow.svg" alt="">
+         </button>
+         <div class="contact-us__title">Контакты</div>
+      </div>
+
+      <div class="contact-us__links">
+         <a href="" class="contact-us_link"><img src="img/menu-burger/vk.svg" alt=""></a>
+         <a href="" class="contact-us_link"><img src="img/menu-burger/discord.svg" alt=""></a>
+         <a href="" class="contact-us_link"><img src="img/menu-burger/YouTube.svg" alt=""></a>
+      </div>
+   </div>
+</div>
+      <div class="howItWork">
+   <div class='howItWork__container _container'>
+      <div class="howItWork__body">
+         <div class="howItWork__up">
+            <h1 class="howItWork__title title">Облачный гейминг</h1>
+            <h2 class="howItWOrk__subtitle subtitle">Как это работает</h2>
+            <p class="howItWork__text-up">
+               Наши сервера запускают игру, и передают
+               вам картинку, которой вы можете управлять
+               в реальном времени!
+            </p>
+            <div class="hr"></div>
+         </div>
+         <div class="howItWork__img img-howItWork">
+            <div class="img-howItWork__img">
+            </div>
+         </div>
+         <div class="howItWork__down">
+            <p class="howItWork__text-down">
+               Приложение запустится на ПК с процессором
+               от 1.5 GHz , от 1 Gb RAM и доступом в интернет
+               от 15 мбит/с
+               на всех операционых системах
+               Windows 7, 8, 10 MacOS и Linux .
+            </p>
+            <button onclick="chooseOC()" class="howItWork__link link" href="">Загрузить</button>
+         </div>
+      </div>
+   </div>
+</div>
+      <div class="playNow">
+   <div class='playNow__container _container'>
+      <div class="playNow__titles">
+         <h1 class="playNow__title title">Быстрый старт</h1>
+         <h2 class="playNow__subtitle subtitle">Начни играть</h2>
+      </div>
+      <div class="playNow__body">
+         <div class="playNow__items">
+            <div class="playNow__item item-playNow">
+               <div class="item-playNow__img">
+                  <img class="item-playNow__img" src="img/playNow/01.svg" alt="">
+               </div>
+               <h3 class="item-playNow__text">Cоздайте аккаунт</h3>
+            </div>
+            <div class="playNow__item item-playNow">
+               <div class="item-playNow__img">
+                  <img class="item-playNow__img" src="img/playNow/02.svg" alt="">
+               </div>
+               <h3 class="item-playNow__text">Cкачайте модуль</h3>
+            </div>
+            <div class="playNow__item item-playNow">
+               <div class="item-playNow__img">
+                  <img class="item-playNow__img" src="img/playNow/03.svg" alt="">
+               </div>
+               <h3 class="item-playNow__text">Выберите тариф </h3>
+            </div>
+            <div class="playNow__item item-playNow">
+               <div class="item-playNow__img">
+                  <img class="item-playNow__img" src="img/playNow/04.svg" alt="">
+               </div>
+               <h3 class="item-playNow__text">Начни играть</h3>
+            </div>
+         </div>
+         <div class="playNow__link">
+            <button onclick="login()" href="#" class="link">Начать</button>
+         </div>
+      </div>
+   </div>
+</div>
+      <div class="tariff">
+   <div class='tariff__container _container'>
+      <div class="tariff__titles">
+         <h1 class="tariff__title title">Гибкие тарифы</h1>
+         <h2 class="tariff__subtitle subtitle">Доступные подписки</h2>
+      </div>
+      <div class="tariff__body">
+         <div class="tariff__items">
+            <div class="tariff__column">
+               <div class="tariff__item item-tariff">
+                  <div class="item-tariff__title">Почасовая оплата</div>
+                  <div class="item-tariff__price">45 р./час</div>
+                  <div class="item-tariff__text">
+                     Доступно:
+                     <p>Каталог игр</p>
+                     <p>Виртуальный ПК</p>
+                     <p>Безлимитная игровая сессия</p>
+                  </div>
+                  <button onclick="login()()" class="item-tariff__button">Выбрать</button>
+               </div>
+            </div>
+            <div class="tariff__column">
+               <div class="tariff__item item-tariff">
+                  <div class="item-tariff__title">Подписка Максимум</div>
+                  <div class="item-tariff__price">2999 р./месяц</div>
+                  <div class="item-tariff__text">
+                     Доступно:
+                     <p>Каталог игр</p>
+                     <p>Виртуальный ПК</p>
+                     <p>Игровая сессия 10 часов/день</p>
+                  </div>
+                  <button onclick="login()()" class="item-tariff__button">Выбрать</button>
+               </div>
+            </div>
+            <div class="tariff__column">
+               <div class="tariff__item item-tariff">
+                  <div class="item-tariff__title">Подписка Минимум</div>
+                  <div class="item-tariff__price">1500 р./месяц</div>
+                  <div class="item-tariff__text">
+                     Доступно:
+                     <p>Каталог игр</p>
+                     <p>Игровая сессия 4 часов/день</p>
+                  </div>
+                  <button onclick="login()()" class="item-tariff__button">Выбрать</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="hr"></div>
+</div>
+      <div class="devices">
+   <div class='devices__container _container'>
+      <div class="devices__body">
+         <div class="devices__titles">
+            <div class="devices__title title">Играть можно в браузере</div>
+            <div class="devices__subsitle subtitle">Запускайте на любых устройствах</div>
+         </div>
+         <div class="devices__text text">Наш модуль доступен на все популярные ОС
+            и работает на всех компьютерах.</div>
+         <button class="devices__link link">Открыть в браузере</button>
+      </div>
+   </div>
+</div>
+      <div class="local">
+   <div class='local__container _container'>
+      <div class="local__titles">
+         <div class="local__title title">Игровые сервера на карте</div>
+         <div class="local__subtitle subtitle">Карта локаций</div>
+      </div>
+      </div>
+   </div>
+   <div class="local__img">
+</div>
+      <div class="register" id="reg" style="transform: translateX(-100%);">
+   <div class='register__container _container'>
+      <div class="register__body">
+         <div class="register__column register__column_first">
+            <button onclick="login()" id="reg_" class="register__itemregister__item_img">
+               <img src="img/register/01.svg" alt="">
+            </button>
+         </div>
+         <div class="register__column ">
+            <div class="register__item ">
+               <div style="display: none" class="register__titles register__titles_2" id="register__titles2" >
+                  <button id='register_active' class="register__subtitle" onclick="login_change()">Вход</button>
+                  <button class="register__title" onclick="login_change()">Регестрация</button>
+               </div>
+               <div style="display: flex" class="register__titles" id="register__titles">
+                  <button class="register__title" id='register_active' onclick="login_change()">Регестрация</button>
+                  <button class="register__subtitle" onclick="login_change()">Вход</button>
+               </div>
+               <div class="registeration__form">
+                  <form style='display: flex' action="#" method="get" class="register__form form-register"
+                     id="form__reg">
+                     <input placeholder="Почта / Телефон" class="form-register__login login" name="" id="register_login"
+                        type="text">
+                     <input placeholder="Пароль" class="form-register__password password" autocomplete="on"
+                        type="password" name="" id="register_password">
+                     <input class="form-register__submit" type="submit" value="Зарегестрироваться">
+                     <div class="form-register__agreement">
+                        <input class="form-register__agree checkbox" type="checkbox" name="" id="agree">
+                        <p class="form-register__text">
+                           Я соглашаюсь со следующими установленными правилами: Политика
+                           использования файлов cookie WARPLAY.CLOUD, Пользовательское соглашение WARPLAY.CLOUD,
+                           Лицензионное соглашение MY.GAMES с конечным пользователем в отношении Игр, Лицензионное
+                           соглашение с конечным Пользователем для WARPLAY.CLOUD Игрового центра, Политика
+                           конфиденциальности портала WARPLAY.CLOUD, Политика конфиденциальности WARPLAY.CLOUD для детей
+                        </p>
+                     </div>
+                  </form>
+                  <form style='display: none' class="login__form login-register" action="#" method="get"
+                     id="form__login">
+                     <input placeholder="Почта / Телефон" class="form-login__login login" name="" id="login_login"
+                        type="text">
+                     <input placeholder="Пароль" autocomplete="on" class="form-login__password password" type="password"
+                        name="" id="login_password">
+                     <div class="login-register__container">
+                        <input class="form-login__remember checkbox" type="checkbox" name="" id="remember">
+                        <input class="login-register__submit" type="submit" value="Войти">
+                     </div>
+                  </form>
+               </div>
+               <div class="register__contacts contacts-register">
+                  <h2 class="contacts-register__title">Войти через</h2>
+                  <div class="contacts-register__contact">
+                     <div class="reg__container"><a href="#"><img src="img/register/02.svg" alt=""></a></div>
+                     <div class="reg__container"><a href="#"><img src="img/register/03.svg" alt=""></a></div>
+                     <div class="reg__container"><a href="#"><img src="img/register/04.svg" alt=""></a></div>
+                     <div class="reg__container"><a href="#"><img src="img/register/05.svg" alt=""></a></div>
+                     <div class="reg__container"><a href="#"><img src="img/register/06.svg" alt=""></a></div>
+                     <div class="reg__container"><a href="#"><img src="img/register/07.svg" alt=""></a></div>
+                     <div class="reg__container"><a href="#"><img src="img/register/08.svg" alt=""></a></div>
+                     <div class="reg__container"><a href="#"><img src="img/register/09.svg" alt=""></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+      <div class="chooseOC" id="chooseOC" style="transform: translateX(-100%);">
+   <div class='chooseOC__container _container'>
+      <div class="chooseOC__body">
+         <div class="chooseOC__column chooseOC__column_img">
+            <button onclick="chooseOC()" class="img"><img src="img/register/01.svg" alt=""></button>
+            <div class="chooseOC__title">Выберете операционную систему</div>
+         </div>
+         <div class="chooseOC__column">
+            <div class="chooseOC__links">
+               <a href="" class="chooseOC__link">
+                  <img src="img/chooseOC/01.svg" alt="">
+               </a>
+               <a href="" class="chooseOC__link">
+                  <img src="img/chooseOC/02.svg" alt="">
+               </a>
+               <a href="" class="chooseOC__link">
+                  <img src="img/chooseOC/03.svg" alt="">
+               </a>
+               <a href="" class="chooseOC__link">
+                  <img src="img/chooseOC/04.svg" alt="">
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+   </div>
+   <footer class="footer">
+   <div class='footer__container _container'>
+      <div class="footer__body">
+         <div class="footer__info">
+            <div class="footer__logo"><span>WARPLAY.CLOUD</span></div>
+            <div class="footer__title">2022. All rights reserved.</div>
+            <div class="footer__subtitle">Design by desart</div>
+         </div>
+         <div class="footer__subinfo">
+            <div class="footer__contacts">
+               <img src="img/menu-burger/YouTube.svg" alt="">
+               <img src="img/menu-burger/vk.svg" alt="">
+               <img src="img/menu-burger/discord.svg" alt="">
+            </div>
+            <button onclick="open_contactUs()" class="footer__contact">Контакты</button>
+            <div class="footer__coocie">Файлы Coocie</div>
+            <div class="footer__political">Политика конфиденциальности</div>
+         </div>
+      </div>
+   </div>
+</footer>
+   <script>
+      function open_burger() {
+         if (document.getElementById('burger_screen').style.transform == 'translateX(-100%)') {
+            document.getElementById('burger_screen').style.transform = 'translateX(0)'
+         } else {
+            document.getElementById('burger_screen').style.transform = 'translateX(-100%)'
+         }
+
+      }
+      function close_burger() {
+         document.getElementById('burger_screen').style.transform = 'translateX(-100%)'
+      }
+      function open_contactUs() {
+         if (document.getElementById('contact_us').style.transform == 'translateX(-100%)') {
+            document.getElementById('contact_us').style.transform = 'translateX(0)'
+         } else {
+            document.getElementById('contact_us').style.transform = 'translateX(-100%)'
+         }
+      }
+      function chooseOC() {
+         if (document.getElementById('chooseOC').style.transform == 'translateX(-100%)') {
+            document.getElementById('chooseOC').style.transform = 'translateX(0)'
+         } else {
+            document.getElementById('chooseOC').style.transform = 'translateX(-100%)'
+         }
+      }
+      function login() {
+         if (document.getElementById('reg').style.transform == 'translateX(-100%)') {
+            document.getElementById('reg').style.transform = 'translateX(0)'
+         } else {
+            document.getElementById('reg').style.transform = 'translateX(-100%)'
+         }
+      }
+      function login_change() {
+         if (document.getElementById('form__login').style.display == 'none') {
+            document.getElementById('register__titles').style.display = "none"
+            document.getElementById('register__titles2').style.display = "flex"
+
+            console.log(1)
+            document.getElementById('form__reg').style.display = 'none'
+            document.getElementById('form__login').style.display = 'block'
+
+         } else {
+            document.getElementById('register__titles').style.display = "flex"
+            document.getElementById('register__titles2').style.display = "none"
+            document.getElementById('form__reg').style.display = 'flex'
+            document.getElementById('form__login').style.display = 'none'
+            console.log(2)
+            //document.getElementById('reg').style.transform = 'translateX(-100%)'
+         }
+      }
+   </script>
+   <script src="js/app.min.js"></script>
+   <!--<script src="js/main.js"></script>-->
+</body>
+
+</html>
